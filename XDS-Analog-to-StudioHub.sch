@@ -25,14 +25,14 @@ F 3 "~" V 2300 1675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:DB9_Male_MountingHoles J2
+L Connector:DB9_Female_MountingHoles J2
 U 1 1 60E88828
-P 4800 1550
-F 0 "J2" H 4980 1552 50  0000 L CNN
-F 1 "DB9_Male" H 4980 1461 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 4800 1550 50  0001 C CNN
-F 3 " ~" H 4800 1550 50  0001 C CNN
-	1    4800 1550
+P 5200 1600
+F 0 "J2" H 5380 1602 50  0000 L CNN
+F 1 "DB9_Female" H 5380 1511 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 5200 1600 50  0001 C CNN
+F 3 " ~" H 5200 1600 50  0001 C CNN
+	1    5200 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -48,8 +48,6 @@ F 3 "~" H 3550 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3250 1950 3100 1950
-Wire Wire Line
-	3850 1950 4500 1950
 $Comp
 L Device:Jumper JP6
 U 1 1 60E91932
@@ -61,10 +59,6 @@ F 3 "~" H 3550 1800 50  0001 C CNN
 	1    3550 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 1800 3850 1850
-Wire Wire Line
-	3850 1850 4500 1850
 Wire Wire Line
 	3250 1800 3150 1800
 Wire Wire Line
@@ -83,8 +77,6 @@ F 3 "~" H 3550 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1150 4500 1150
-Wire Wire Line
 	3250 1150 2950 1150
 Wire Wire Line
 	2950 1150 2950 1750
@@ -102,10 +94,6 @@ F 3 "~" H 3550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 1300 3850 1250
-Wire Wire Line
-	3850 1250 4500 1250
-Wire Wire Line
 	3000 1300 3000 1450
 Wire Wire Line
 	3000 1450 2800 1450
@@ -120,8 +108,6 @@ F 3 "~" H 3550 2150 50  0001 C CNN
 	1    3550 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 2150 3850 2150
 Wire Wire Line
 	3250 2150 3050 2150
 $Comp
@@ -142,18 +128,6 @@ Wire Wire Line
 NoConn ~ 2700 1550
 NoConn ~ 2700 1350
 NoConn ~ 2700 1250
-Wire Wire Line
-	4500 1750 4500 1650
-Wire Wire Line
-	4500 1650 4350 1650
-Wire Wire Line
-	4350 1650 4350 1550
-Wire Wire Line
-	4350 1350 4500 1350
-Connection ~ 4500 1650
-Connection ~ 4350 1550
-Wire Wire Line
-	4350 1550 4350 1350
 $Comp
 L Device:Jumper JP9
 U 1 1 60E9CAA6
@@ -169,7 +143,6 @@ Wire Wire Line
 	4100 1550 4100 2450
 Wire Wire Line
 	4100 2450 3850 2450
-Connection ~ 4100 1550
 Wire Wire Line
 	4100 1550 3850 1550
 Wire Wire Line
@@ -201,20 +174,6 @@ F 3 "~" H 4100 1450 50  0001 C CNN
 	1    4100 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 1550 4100 1550
-Wire Wire Line
-	4200 1450 4200 1500
-Wire Wire Line
-	4200 1500 4500 1500
-Wire Wire Line
-	4500 1500 4500 1550
-Wire Wire Line
-	4500 1450 4250 1450
-Wire Wire Line
-	4250 1450 4250 1350
-Wire Wire Line
-	4250 1350 4200 1350
 Wire Wire Line
 	4000 1450 3100 1450
 Wire Wire Line
@@ -269,4 +228,51 @@ Wire Wire Line
 Connection ~ 2800 1850
 Wire Wire Line
 	2800 1850 2700 1850
+Wire Wire Line
+	3850 1150 4450 1150
+Wire Wire Line
+	4450 1150 4450 2000
+Wire Wire Line
+	4450 2000 4900 2000
+Wire Wire Line
+	3850 1300 4500 1300
+Wire Wire Line
+	4500 1300 4500 1900
+Wire Wire Line
+	4500 1900 4900 1900
+Wire Wire Line
+	3850 1950 4550 1950
+Wire Wire Line
+	4550 1950 4550 1200
+Wire Wire Line
+	4550 1200 4900 1200
+Wire Wire Line
+	3850 1800 4600 1800
+Wire Wire Line
+	4600 1800 4600 1300
+Wire Wire Line
+	4600 1300 4900 1300
+Wire Wire Line
+	4200 1450 4700 1450
+Wire Wire Line
+	4700 1450 4700 1600
+Wire Wire Line
+	4700 1600 4900 1600
+Wire Wire Line
+	4200 1350 4800 1350
+Wire Wire Line
+	4800 1350 4800 1700
+Wire Wire Line
+	4800 1700 4900 1700
+Wire Wire Line
+	4900 1400 4900 1450
+Wire Wire Line
+	4900 1800 4850 1800
+Wire Wire Line
+	4850 1800 4850 1450
+Wire Wire Line
+	4850 1450 4900 1450
+Connection ~ 4900 1450
+Wire Wire Line
+	4900 1450 4900 1500
 $EndSCHEMATC
